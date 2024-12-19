@@ -1,0 +1,70 @@
+@font-face {
+  font-family: myfont;
+  src: url(Poppins/Poppins-Medium.ttf);
+}
+* {
+  font-family: myfont;
+  scroll-behavior: smooth
+}
+.center {
+  @apply flex justify-center items-center;
+}
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .5s ease-in-out;
+}
+
+.link-underline-black {
+  background-image: linear-gradient(transparent, transparent), linear-gradient(rgb(21, 20, 21), rgb(27, 25, 26))
+}
+
+.link-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 100%
+}
+
+
+.link-dark-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .5s ease-in-out;
+}
+
+.link-dark-underline-black {
+  background-image: linear-gradient(transparent, transparent), linear-gradient(rgb(244, 242, 242), rgb(244, 242, 242))
+}
+
+.link-dark-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 100%
+}
+/* .darkTheme {
+background: rgb(205,19,29);
+background: linear-gradient(90deg, rgba(105,20,7,1) 0%, rgba(20,20,20,1) 50%);
+
+} */
+.darkTheme {
+  background: rgb(2, 36, 55); /* Fallback background color */
+  background: linear-gradient(90deg, rgb(181, 207, 191) 0%, rgb(13, 72, 79) 50%);
+  transition: background 1000ms ease; /* Smooth transition for background changes */
+}
+
+.pageDark{
+
+background: rgb(36, 54, 66);
+background: linear-gradient(90deg, rgb(13, 72, 79) 44%, rgb(10, 10, 10) 100%);
+transition: background 1000ms ease; /* Smooth transition for background changes */
+
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
